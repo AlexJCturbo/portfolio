@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0px 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #78919e;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 25px;
+    padding: 25px 0;
+    background-color: #78919e;
+    color: white;
+    justify-content: space-between;
+}
+
+.profile_name {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.profile_name h2 {
+    padding: 10px 15px;
+    background-color: #51636c;
+    border-radius: 10px;
+}
+
+a, a:visited{
+    color: white;
+}
+
+a:active, .social_media_icons:active {
+    color: rgb(0, 145, 255);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav.main_menu ul{
+    list-style: none;
+    display: flex;
+    padding: 0 25px;
+    font-size: large;
+}
+
+nav.main_menu ul li {
+    padding: 0 30px;
+}
+
+nav.main_menu ul li:hover {
+    color:rgb(0, 145, 255);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.coding_pic {
+    height: 500px;
+    width: 100%;
+    background-image: url("../images/negative-space-97077.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.caption {
+    font-size:x-small;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+
+main, footer {
+    display: block;
+    margin: 15px 15px;
+}
+
+article h3, section h3 {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+
+main article, footer section {
+    background-color: #51636c;
+    border-radius: 10px;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 25px 25px;
+    padding: 50px;
+}
+
+#about_me {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 25px 25px;
+    padding: 25px 25px;
+}
+
+#about_me h3{
+    display: flex;
+    white-space: nowrap;
+    margin-right: 40px;
+}
+
+#about_me p{
+    padding: 40px 25px;
+}
+
+.profile_picture img {
+    max-width: 100%;
+    max-height: 800px;
+    float:left;
+    padding: 0 25px;
+}
+
+.horiseon_html_syntax img {
+    max-width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    float:left;
+}
+
+#portfolio_projects {
+    display: flex;
+    margin: 25px 25px;
+    padding: 25px 25px;
+}
+
+#stack {
+    position: relative;
+    display: flex;
+}
+
+#html_icon {
+    list-style: none;
+}
+
+#stack ul li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #51636c;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+#contact_details {
+    position: relative;
+    display: flex;
+}
+
+footer section ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #51636c;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+footer section div .info_social {
+    display: flex;
+    align-items: center;
+    background-color: #51636c;
+    border-radius: 10px;
+}
+
+.contact_info_social li, .info_social a {
+    position: relative;
+    display: flex;
+}
+
+
+.contact_info_social ul {
+    display: flex;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    padding: 0 25px;
+}
+
+.contact_info_social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 10px 10px;
+
+}
+
+#Can a:hover, #Can a:active, #Mex a:hover, #Mex a:active, #send_mail a:hover, #send_mail a:active {
+    text-decoration: underline;
+    display: flex;
+    font-weight: bold;
+    font-size: large;
+}
+
+#Can, #Mex, #sed_mail {
+    flex-grow: 1;
+}
+
+
+.social_media_icons {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 80px 15px 55px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.social_media_icons:hover {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* Added Media Query for smaller screens to adjust navigation menu */
+@media screen and (max-width: 1024px) {    
+    nav ul li {
+        padding-bottom: 18px;
+    }
+    header h1 {
+        align-self:center;
+    }
+    #about_me {
+        height: fit-content;
+        width:fit-content;
+    }
+}
